@@ -9,10 +9,11 @@ interface HeroHeaderProps {
 
 const HeroHeader: React.FC<HeroHeaderProps> = ({ title, subtitle, buttonText, onButtonClick }) => {
   return (
-    <div className="bg-gradient-to-r from-blue-500 to-purple-600 h-screen flex items-center justify-center text-center px-4">
+    <div className="bg-[#F0EAD6] h-screen flex items-center justify-center text-center px-4">
       <div className="max-w-2xl">
-        <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">{title}</h1>
-        {subtitle && <p className="text-xl md:text-2xl text-white mb-6">{subtitle}</p>}
+        <h1 className="text-5xl md:text-6xl font-bold text-black mb-4">{title}</h1>
+        <video muted autoPlay={true} loop className='w-[450px] h-[450px] object-cover'> <source src="sky_video.mp4" className='object-none' type="video/mp4" /></video>
+        {subtitle && <p className="text-xl md:text-2xl text-black mb-6">{subtitle}</p>}
         <button
           onClick={onButtonClick}
           className="px-6 py-3 text-lg bg-white text-blue-600 font-semibold rounded-md shadow-lg hover:bg-blue-50 transition"

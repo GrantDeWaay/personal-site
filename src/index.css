@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400; /* Regular weight */
+    font-display: swap;
+    src: url('../public/fonts/Helvetica.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700; /* Bold weight */
+    font-display: swap;
+    src: url('../public/fonts/Helvetica-Bold.ttf') format('truetype');
+  }
+}

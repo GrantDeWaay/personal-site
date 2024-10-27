@@ -7,7 +7,7 @@ type LinkProps = {
 
 const Link: React.FC<LinkProps> = ({ text, url }) => {
   return (
-    <a href={url} className="font-sans font-bold underline" >{text}</a>
+    <a href={url} className="font-sans font-bold text-xl underline" >{text}</a>
   );
 };
 

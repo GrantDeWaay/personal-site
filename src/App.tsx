@@ -56,11 +56,11 @@ const App: React.FC = () => {
             <a href="https://devpost.com/software/harvard-burger" target="_blank" className="inline-block ml-1 mt-1">
               <ExternalArrow/>
             </a>
-            <br />Harvard burger is a burgerHarvard burger is a burgerHarvard burger is a burgerHarvard burger is a burgerHarvard burger is a burgerHarvard burger is a burger
+            <br />Harvard Burger, winner of the Funniest Hack Award at HackHarvard 2024, is a digital drivethru kiosk that understands the semantic meaning of the order using cutting edge AI, and adds an item to a list depending on the set menu, then, transponds with a whitty, less than polite response from a low-wage fast food worker.
           </div>
 
           <div className='col-span-12 md:col-span-4 text-sm leading-relaxed text-black'>
-            <strong><a href='https://example.com/league-of-legends-voice-chat' className='underline'>League of Legends Voice Chat App (5-Peer WebRTC)</a></strong>
+            <strong><a href='https://example.com/league-of-legends-voice-chat' className='underline'>League of Legends Voice Chat Application (5-Peer WebRTC) [WIP]</a></strong>
             <a href="https://example.com/league-of-legends-voice-chat" target="_blank" className="inline-block ml-1 mt-1">
             <ExternalArrow/>
             </a>
@@ -68,7 +68,7 @@ const App: React.FC = () => {
           </div>
 
           <div className='col-span-12 md:col-span-4 text-sm leading-relaxed text-black'>
-            <strong><a href='https://example.com/ai-checkers-bot' className='underline'>AI Checkers Bot</a></strong>
+            <strong><a href='https://example.com/ai-checkers-bot' className='underline'>AI Checkers Bot [WIP]</a></strong>
             <a href="https://example.com/ai-checkers-bot" target="_blank" className="inline-block ml-1 mt-1">
             <ExternalArrow/>
             </a>
@@ -80,7 +80,7 @@ const App: React.FC = () => {
             <a href="https://example.com/spime-lca" target="_blank" className="inline-block ml-1 mt-1">
               <ExternalArrow/>
             </a>
-            <br />Spime is a Transparent LCA system that enables consumers to see exactly where their products come from, from cradle to grave
+            <br />Spime is a Transparent LCA system that enables consumers to see exactly where their products come from, from cradle to grave.
           </div>
 
         </div>

@@ -10,7 +10,7 @@ import Links from './components/Links';
 
 const App: React.FC = () => {
   return (
-    <div className=''>
+    <div>
       
       <LayoutContainer>
         <Navbar />

@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Grant DeWaay",
+  "name": "Grant DeWaay - Software Engineer",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,18 +8,18 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "Tricolor192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "Tricolor512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#e0e5db",
+  "background_color": "#e0e5db"
 }

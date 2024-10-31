@@ -14,7 +14,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ title, description, url, chip
     return (
         <>
             <div className='col-span-1' />
-            <div className="col-span-10 text-sm leading-relaxed text-faded-black border-l-2 pl-3 border-swiss-yellow transition-all duration-200 ease-linear hover:border-l-4 ">
+            <div className="col-span-10 text-sm leading-relaxed text-faded-black border-l-2 pl-3 border-swiss-blue transition-all duration-100 ease-linear hover:border-l-4 ">
                 <strong>
                     <a href={url} target="_blank" rel="noopener noreferrer" className={hasUnderline}>
                         {title}

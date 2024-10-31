@@ -8,7 +8,7 @@ const About: React.FC = () => (
             </h3>
         </div>
         <div className="col-span-1"></div>
-        <div className="col-span-10 text-sm leading-relaxed text-faded-black border-l-2 pl-3 border-swiss-red transition-all duration-200 ease-linear hover:border-l-4">
+        <div className="col-span-10 text-sm leading-relaxed text-faded-black border-l-2 pl-3 border-swiss-red transition-all duration-100 ease-linear hover:border-l-4">
             <p>
                 <strong>Hi, I'm Grant!</strong>
             </p>

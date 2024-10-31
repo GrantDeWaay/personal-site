@@ -8,9 +8,9 @@ const WorkExperience: React.FC = () => (
       </h3>
     </div>
     <div className="col-span-1"></div>
-    <div className="col-span-10 text-sm leading-relaxed text-faded-black border-l-2 pl-3 border-swiss-blue transition-all duration-200 ease-linear hover:border-l-4">
+    <div className="col-span-10 text-sm leading-relaxed text-faded-black border-l-2 pl-3 border-swiss-yellow transition-all duration-100 ease-linear hover:border-l-4">
       <p>
-        <strong>Buildertrend</strong>
+        <strong>Buildertrend - Summer Software Engineering Internship 2023 & 2024</strong>
         <br />
         Based in Omaha, Buildertrend is the largest developer of construction site management software.
         In my first summer at Buildertrend, I developed a semantic search prototype leading to the formation of the Silver Sky development team. During my second summer, I contributed to the RebateHawk project, showcasing my ability to innovate and improve software solutions.

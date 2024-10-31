@@ -11,9 +11,9 @@ const Header: React.FC = () => (
             Software Engineer
           </p>
           <div className='flex justify-center gap-4 mt-4'>
-            <div className="w-[20px] h-[20px] bg-[#DE3D83] rounded-full"></div>
-            <div className="w-[20px] h-[20px] bg-[#00B8B8] rounded-full"></div>
-            <div className="w-[20px] h-[20px] bg-[#E4BD0B] rounded-full"></div>
+            <div className="w-[20px] h-[20px] bg-swiss-red rounded-full"></div>
+            <div className="w-[20px] h-[20px] bg-swiss-yellow rounded-full"></div>
+            <div className="w-[20px] h-[20px] bg-swiss-blue rounded-full"></div>
           </div>
         </div>
     </>

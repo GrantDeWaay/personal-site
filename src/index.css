@@ -19,3 +19,8 @@
     src: url('../public/fonts/Helvetica-Bold.ttf') format('truetype');
   }
 }
+@layer utilities {
+  .text-scaled {
+    font-size: calc(2rem + 5vw); /* Adjust values as needed */
+  }
+}

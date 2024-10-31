@@ -12,3 +12,14 @@
     opacity: 0.10;
     pointer-events: none;
   }
+
+  .justified {
+    text-align: justify;
+  }
+  
+  .justified:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+  }
+  

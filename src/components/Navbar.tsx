@@ -1,14 +1,12 @@
 import React from 'react';
+import Link from './Link';
 
 const Navbar: React.FC = () => {
   return (
-    <div className='w-full  text-white p-4'>
-      <div className="flex justify-around w-full max-w-4xl mx-auto">
-        <button className="bg-gray-700 px-4 py-2 rounded">Home</button>
-        <button className="bg-gray-700 px-4 py-2 rounded">About</button>
-        <button className="bg-gray-700 px-4 py-2 rounded">Services</button>
-        <button className="bg-gray-700 px-4 py-2 rounded">Contact</button>
-      </div>
+    <div className='flex flex-auto justify-between px-16 col-span-12'>
+      <Link url="https://www.linkedin.com/in/grant-dewaay/" text='LinkedIn' disable/>
+      <Link url="https://github.com/GrantDeWaay" text='GitHub' disable/>
+      <Link url="https://www.instagram.com/Grant.DeWaay/" text='Instagram' disable/>
     </div>
   );
 };

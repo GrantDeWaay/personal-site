@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css'
 
-type ChipProps = {
+export type ChipProps = {
     text: string,
     type?: number
   };

@@ -1,23 +1,34 @@
 import React from 'react';
 import Navbar from './Navbar';
+import CenteredVideo from './CenteredVideo';
+import GitHubIcon from './GitHubIcon';
+import LinkedInIcon from './LinkedInIcon';
+import ResumeButton from './ResumeButton';
 
 const Header: React.FC = () => (
-    <>
-      <div className=" col-span-12 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-3 text-faded-black">
-            Grant DeWaay
-          </h1>
-          <p className="text-xl font-medium text-faded-black">
-            Software Engineer
-          </p>
-          <div className='flex justify-center gap-4 mt-4'>
-            <div className="w-[20px] h-[20px] bg-swiss-red rounded-full"></div>
-            <div className="w-[20px] h-[20px] bg-swiss-yellow rounded-full"></div>
-            <div className="w-[20px] h-[20px] bg-swiss-blue rounded-full"></div>
-          </div>
-        </div>
-    </>
-
+  <div>
+    <div className="flex md:flex-row flex-col items-center justify-center md:px-[10%] px-[5%] gap-4 md:gap-0 ">
+    <div className='text-center flex-1 md:text-left'>
+      <h1 className="lg:text-7xl text-5xl leading-tight font-bold text-faded-back">
+        Grant DeWaay
+      </h1>
+      <p className="text-3xl pb-3 font-medium text-faded-back">
+        Software Engineer
+      </p>
+      <div className='flex justify-center md:justify-start gap-4'>
+      <ResumeButton/>
+      <GitHubIcon/>
+      <LinkedInIcon/>
+      </div>
+      
+      </div>
+      <div>
+        
+      </div>
+      <CenteredVideo/>
+      
+    </div>
+  </div>
 );
 
 export default Header;

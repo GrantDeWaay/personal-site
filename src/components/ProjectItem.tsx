@@ -14,7 +14,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ title, description, url, chip
     const hasUnderline = url ? "hover:underline" : "";
 
     return (
-        <div className="col-start-2 col-end-12 text-sm leading-relaxed text-faded-black border-l-2 pl-3 border-swiss-blue transition-all duration-200 ease-linear hover:border-l-4">
+        <div className="col-start-2 col-end-12 text-sm leading-relaxed text-faded-black border-l-2 pl-3 border-swiss-blue transition-all duration-200 ease-linear z-10 hover:border-l-4">
             {/* Title Section */}
             <strong className='text-base'>
                 <a href={url} target="_blank" rel="noopener noreferrer" className={hasUnderline}>

@@ -9,12 +9,12 @@ type ChipProps = {
 
 const WorkExperience: React.FC = () => (
   <>
-    <div className="col-span-12">
+    <div className="col-span-12 z-10 px-6">
       <h3 className="text-2xl font-bold tracking-wide text-faded-black">
         Work Experience
       </h3>
     </div>
-    <div className="col-start-2 col-end-12 border-l-2 pl-3 border-swiss-yellow transition-all duration-200 ease-linear hover:border-l-4">
+    <div className="col-start-2 col-end-12 border-l-2 pl-3 border-swiss-yellow transition-all duration-200 ease-linear hover:border-l-4 z-10 ">
       <p className='text-base leading-relaxed text-faded-black'>
         <strong>Buildertrend - Summer 2024 Software Engineering Internship</strong>
         <br />
@@ -42,10 +42,10 @@ const WorkExperience: React.FC = () => (
         ]} 
       />
     </div>
-    <div className="col-span-1"></div>
+    <div className="col-span-1 z-10"></div>
 
-    <div className="col-span-1"></div>
-    <div className="col-start-2 col-end-12 border-l-2 pl-3 border-swiss-yellow transition-all duration-200 ease-linear hover:border-l-4">
+    <div className="col-span-1 z-10"></div>
+    <div className="col-start-2 col-end-12 border-l-2 pl-3 border-swiss-yellow transition-all duration-200 ease-linear hover:border-l-4 z-10">
       <p className='text-base leading-relaxed text-faded-black'>
         <strong>Buildertrend - Summer 2023 Software Engineering Internship</strong>
         <br />

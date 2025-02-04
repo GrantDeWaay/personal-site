@@ -13,7 +13,7 @@ const ChipSet: React.FC<ChipSetProps> = ({ items, type }) => {
         <Chip text={item.text} type={item.type}/>
     ); 
     return (
-        <div className={"flex flex-wrap gap-1 pt-2"}>{listItems}</div>
+        <div className={"flex flex-wrap gap-1 py-2"}>{listItems}</div>
     )
 };
 

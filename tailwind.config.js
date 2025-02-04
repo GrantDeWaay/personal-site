@@ -10,16 +10,19 @@ module.exports = {
       },
       colors: {
         'swiss-red': '#de3d83',
-        'swiss-blue': '#00b8b8',
         'swiss-yellow': '#e4bd0b',
+        'swiss-blue': '#00b8b8',
+
         'swiss-gray': '#e0e5db',
-        'faded-black': '#292928',
+        'faded-back': '#292928',
+        'faded-black': '#e0e5db',
       },
       gridAutoRows: {
         'fixed': '', // or another fixed height value like '200px'
       },
     },
   },
+  plugins: [require('@tailwindcss/aspect-ratio')],
 
   plugins: [],
 }

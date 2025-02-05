@@ -4,7 +4,8 @@ import { motion } from 'framer-motion';
 const About: React.FC = () => (
 
     <>
-    <div className="grid md:col-span-6 col-span-12 z-10 mr-8 mt-16 md:my-16 text-faded-black gap-6 ">
+    <div className="grid lg:col-span-6 col-span-12 z-10 mr-8 mt-16 md:my-16 text-faded-black gap-6 ">
+
         {/* Text Section */}
         <motion.div 
             initial={{ opacity: 0 }}
@@ -34,9 +35,9 @@ const About: React.FC = () => (
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
-            className="md:col-span-6 col-span-12  md:my-16 mb-16 flex items-center justify-center z-[10000] "
+            className="lg:col-span-6 col-span-12  md:my-16 mb-16 flex items-center justify-center z-[10000] "
         >
-            <img src="Photo1.jpg" className="max-w-full max-h-full rounded-lg border-2  border-swiss-red  " alt="Image" />
+            <img src="Photo1.jpg" className="max-w-full max-h-full rounded-lg border-4  border-swiss-red  " alt="Image" />
         </motion.div>
     </>
 );

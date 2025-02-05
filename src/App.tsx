@@ -24,9 +24,6 @@ const App: React.FC = () => {
 
       </LayoutContainer>
       <LayoutContainer3>
-        
-      </LayoutContainer3>
-      <LayoutContainer3>
         {/* Wrapping the NewCards with motion.div for sequential animation */}
           <div className='col-span-12 z-10 text-center text-faded-back font-sans text-5xl font-bold underline underline-offset-2 decoration-4 decoration-swiss-blue'>Projects</div>
         <motion.div
@@ -34,7 +31,7 @@ const App: React.FC = () => {
           whileInView={{ opacity: 1 }} // Make it fade in when it enters the viewport
           transition={{ duration: 1, delay: 1 / 6 }} // No delay for the first card
           viewport={{ once: true }} // Trigger the animation only once
-          className='md:col-span-4 col-span-12 z-10 flex md:mx-0'
+          className='lg:col-span-4 col-span-12 z-10 flex md:mx-0'
         >
 
           <NewCard
@@ -54,14 +51,14 @@ const App: React.FC = () => {
           whileInView={{ opacity: 1 }} // Make it fade in when it enters the viewport
           transition={{ duration: 1, delay: 2 / 6 }} // Adding a delay of 0.5s for the second card
           viewport={{ once: true }} // Trigger the animation only once
-          className='md:col-span-4 col-span-12 z-10 flex'
+          className='lg:col-span-4  md:col-span-6  col-span-12 z-10 flex'
         >
 
           <NewCard
             image={'./eco.png'}
             title={"Circular Track"}
             subtitle={'Circular Economy for Consumer Products'}
-            text={"CircularTrack is a transparent logistics platform promoting circular economy practices by engaging consumers in recycling and material reuse. It tracks materials from production to recycling using RFID tags, helping companies monitor material usage and reduce raw material consumption."}
+            text={"CircularTrack is a transparent logistics platform promoting circular economy practices by engaging consumers in recycling and material reuse. It tracks materials from production to recycling using NFC tags, helping companies monitor material usage and reduce raw material consumption."}
             link={'https://github.com/GrantDeWaay/CircularTrack'}
             color='#292928'
             buttonLabel={'GitHub'}
@@ -73,7 +70,7 @@ const App: React.FC = () => {
           whileInView={{ opacity: 1 }} // Make it fade in when it enters the viewport
           transition={{ duration: 1, delay: 1 / 2 }} // Adding a delay of 1s for the third card
           viewport={{ once: true }} // Trigger the animation only once
-          className='md:col-span-4 col-span-12 z-10 md:mx-0 flex'
+          className='lg:col-span-4 md:col-span-6  col-span-12 z-10 md:mx-0 flex'
         >
           <NewCard
             image={'./HackHarvard.png'}
@@ -90,7 +87,7 @@ const App: React.FC = () => {
           whileInView={{ opacity: 1 }} // Make it fade in when it enters the viewport
           transition={{ duration: 1, delay: 4 / 6 }} // Adding a delay of 1s for the third card
           viewport={{ once: true }} // Trigger the animation only once
-          className='md:col-span-4 col-span-12 z-10 flex'
+          className='lg:col-span-4 md:col-span-6  col-span-12 z-10 flex'
         >
           <NewCard
             image={'./analytics.png'}
@@ -107,7 +104,7 @@ const App: React.FC = () => {
           whileInView={{ opacity: 1 }} // Make it fade in when it enters the viewport
           transition={{ duration: 1, delay: 4 / 6 }} // Adding a delay of 1s for the third card
           viewport={{ once: true }} // Trigger the animation only once
-          className='md:col-span-4 col-span-12 z-10 flex'
+          className='lg:col-span-4 md:col-span-6 col-span-12 z-10 flex'
         >
           <NewCard
             image={'./website.png'}

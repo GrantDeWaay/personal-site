@@ -30,18 +30,18 @@ const Card: React.FC<CardProps> = ({ image, title, subtitle, text, icons, link, 
     >
       <div className="flex items-center justify-between mb-4">
         <div>
-          <h2 className={`text-xl font-bold ${dark ? 'text-faded-back' : 'text-faded-black'}`}>{title}</h2>
-          <h3 className={` italic ${dark ? 'text-faded-back' : 'text-faded-black'}`}>{subtitle}</h3>
+          <h2 className={`lg:text-lg font-bold ${dark ? 'text-faded-back' : 'text-faded-black'}`}>{title}</h2>
+          <h3 className={`lg:text-md text-xs italic ${dark ? 'text-faded-back' : 'text-faded-black'}`}>{subtitle}</h3>
         </div>
         
         <img 
-          className={`w-16 h-16 object-cover rounded-md ${imageOutline ? 'border-2 border-white' : ''}`} 
+          className={`lg:w-16 lg:h-16 w-12 h-12 object-cover rounded-md ${imageOutline ? 'border-2 border-white' : ''}`} 
           src={image} 
           alt={title} 
         />
       </div>
 
-      <p className={`flex-grow ${dark ? 'text-faded-back' : 'text-faded-black'}`}>{text}</p>
+      <p className={`flex-grow text-sm ${dark ? 'text-faded-back' : 'text-faded-black'}`}>{text}</p>
 
       <button
         onClick={openLink}

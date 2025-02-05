@@ -62,6 +62,8 @@ const App: React.FC = () => {
             link={'https://github.com/GrantDeWaay/CircularTrack'}
             color='#292928'
             buttonLabel={'GitHub'}
+            buttonLabel2='Design Doc'
+            link2='https://docs.google.com/document/d/1kReilNLOIi2Ksfg1FNLXpN8A0Ao9hnRkQ1Z1FBXZ0DY/edit?usp=sharing'
           />
         </motion.div>
 
@@ -80,6 +82,8 @@ const App: React.FC = () => {
             link={'https://github.com/GrantDeWaay/HackHarvard2024'}
             buttonLabel={'GitHub'}
             color={'#292928'}
+            buttonLabel2='Devpost'
+            link2='https://devpost.com/software/harvard-burger'
           />
         </motion.div>
         <motion.div

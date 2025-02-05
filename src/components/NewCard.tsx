@@ -12,9 +12,11 @@ interface CardProps {
   color?: string;
   dark?: boolean;
   imageOutline?: boolean;
+  buttonLabel2?: string;
+  link2?: string;
 }
 
-const Card: React.FC<CardProps> = ({ image, title, subtitle, text, icons, link, buttonLabel, color = "", dark, imageOutline = false }) => {
+const Card: React.FC<CardProps> = ({ image, title, subtitle, text, icons, link, buttonLabel, color = "", dark, imageOutline = false, buttonLabel2, link2 }) => {
   const {addInteraction} = useMyContext();
   const openLink = () => {
     addInteraction(`visited ${title}`);
@@ -41,14 +43,40 @@ const Card: React.FC<CardProps> = ({ image, title, subtitle, text, icons, link, 
         />
       </div>
 
+
       <p className={`flex-grow text-sm ${dark ? 'text-faded-back' : 'text-faded-black'}`}>{text}</p>
 
-      <button
+      {(!buttonLabel2 || !link2) && (      <button
         onClick={openLink}
-        className={`mt-4 ${dark ? 'bg-faded-back text-faded-black' : 'bg-faded-black text-faded-back'} font-semibold py-2 px-4 rounded`}
+        className={`mt-8 ${dark ? 'bg-faded-back text-faded-black' : 'bg-faded-black text-faded-back'} font-semibold py-2 px-4 rounded`}
+      >
+        {buttonLabel}
+      </button>)}
+
+
+      {buttonLabel2 && link2 && (
+
+        <div className='flex flex-row gap-x-2'>
+              <button
+        onClick={openLink}
+        className={`mt-4 flex-1 ${dark ? 'bg-faded-back text-faded-black' : 'bg-faded-black text-faded-back'} font-semibold py-2 px-4 rounded`}
       >
         {buttonLabel}
       </button>
+
+      <button
+          onClick={() => {
+            addInteraction(`visited ${title} ${buttonLabel2}`);
+            window.open(link2, "_blank");
+          }}
+          className={`mt-4 flex-1 ${dark ? 'bg-faded-back text-faded-black' : 'bg-faded-black text-faded-back'} font-semibold py-2 px-4 rounded`}
+        >
+          {buttonLabel2}
+        </button>
+        </div>
+
+
+      )}
     </div>
   );
 };

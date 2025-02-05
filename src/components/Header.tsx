@@ -12,14 +12,9 @@ const Header: React.FC = () => (
       <h1 className="lg:text-7xl text-5xl leading-tight font-bold text-faded-back">
         Grant DeWaay
       </h1>
-      <div className='flex'>
       <p className="text-3xl pb-3 text-faded-back  decoration-swiss-red  underline-offset-2">
         Software Engineer
       </p>
-      {/* <div className='bg-swiss-red inline-block rounded-full w-[1.875rem] h-[1.875rem] mt-[0.25rem] ml-[1rem]'/>
-      <div className='bg-swiss-blue inline-block rounded-full w-[1.875rem] h-[1.875rem] mt-[0.25rem] ml-[.5rem]'/>
-      <div className='bg-swiss-yellow inline-block rounded-full w-[1.875rem] h-[1.875rem] mt-[0.25rem] ml-[.5rem]'/> */}
-      </div>
 
       <div className='flex justify-center md:justify-start gap-4'>
       <ResumeButton/>

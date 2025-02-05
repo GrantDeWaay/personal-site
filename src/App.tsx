@@ -24,8 +24,11 @@ const App: React.FC = () => {
 
       </LayoutContainer>
       <LayoutContainer3>
+        
+      </LayoutContainer3>
+      <LayoutContainer3>
         {/* Wrapping the NewCards with motion.div for sequential animation */}
-          <div className='col-span-12 z-10 text-center text-faded-black font-sans text-4xl font-bold'>Projects</div>
+          <div className='col-span-12 z-10 text-center text-faded-back font-sans text-5xl font-bold underline underline-offset-2 decoration-4 decoration-swiss-blue'>Projects</div>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }} // Make it fade in when it enters the viewport
@@ -41,7 +44,7 @@ const App: React.FC = () => {
             text={"I created an MCTS-based AI to analyze game states and suggest optimal moves, incorporating selection, expansion, simulation, and backpropagation. I also developed a GUI to display valid moves and provided real-time feedback, while testing AI performance on exploration constants."}
             link={'https://github.com/GrantDeWaay/CheckersBot'}
             buttonLabel={'GitHub'}
-            color={"#000000"}
+            color={"#292928"}
             imageOutline
           />
         </motion.div>
@@ -60,7 +63,7 @@ const App: React.FC = () => {
             subtitle={'Circular Economy for Consumer Products'}
             text={"CircularTrack is a transparent logistics platform promoting circular economy practices by engaging consumers in recycling and material reuse. It tracks materials from production to recycling using RFID tags, helping companies monitor material usage and reduce raw material consumption."}
             link={'https://github.com/GrantDeWaay/CircularTrack'}
-            color='#008000'
+            color='#292928'
             buttonLabel={'GitHub'}
           />
         </motion.div>
@@ -79,7 +82,7 @@ const App: React.FC = () => {
             text={"Harvard Burger is a digital drive-thru kiosk with a twist. It interprets the user's spoken order with smart semantic processing, converting their requests into a complete order from a preset menu. Winner of the Funniest Hack Award at HackHarvard 2024."}
             link={'https://github.com/GrantDeWaay/HackHarvard2024'}
             buttonLabel={'GitHub'}
-            color={'#e20128'}
+            color={'#292928'}
           />
         </motion.div>
         <motion.div
@@ -95,7 +98,7 @@ const App: React.FC = () => {
             subtitle={'Visit Analytics for my Personal Site'}
             text={'Grantalytics Server is a simple data aggregation RESTful service built with Spring Boot that receives requests when users visit and subsequently closes my personal site This enables me to see what projects resonate the most with my audience, and what content I can improve on.'}
             link={'https://github.com/GrantDeWaay/GrantalyticsServer'}
-            color='#A68B00'
+            color='#292928'
             buttonLabel={'GitHub'}
           />
         </motion.div>
@@ -112,10 +115,11 @@ const App: React.FC = () => {
             subtitle={'A Portfolio to Showcase Myself'}
             text={'I drew inspiration from a range of designers to bring this portfolio website to life. For the layout, I referenced Grid Systems in Graphic Design by Josef Müller-Brockmann. I also applied elements of Dieter Rams\' 10 Principles of Good Design, reminding myself to keep it simple.'}
             link={'https://github.com/GrantDeWaay/personal-site'}
-            color='#0095a3'
+            color='#292928'
             buttonLabel={'GitHub'}
           />
         </motion.div>
+        
       </LayoutContainer3>
       <Footer />
       <GrainyOverlay />

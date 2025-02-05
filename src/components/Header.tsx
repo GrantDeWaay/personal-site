@@ -12,7 +12,7 @@ const Header: React.FC = () => (
       <h1 className="lg:text-7xl text-5xl leading-tight font-bold text-faded-back">
         Grant DeWaay
       </h1>
-      <p className="text-3xl pb-3 font-medium text-faded-back">
+      <p className="text-3xl pb-3 text-faded-back">
         Software Engineer
       </p>
       <div className='flex justify-center md:justify-start gap-4'>

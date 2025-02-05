@@ -25,7 +25,7 @@ const Card: React.FC<CardProps> = ({ image, title, subtitle, text, icons, link, 
 
   return (
     <div 
-      className="overflow-hidden shadow-lg p-4 flex flex-col z-10 rounded-md" 
+      className="overflow-hidden shadow-lg p-4 flex flex-col z-10 rounded-xl border-4 border-swiss-blue" 
       style={{ backgroundColor: color }}
     >
       <div className="flex items-center justify-between mb-4">

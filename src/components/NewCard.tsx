@@ -1,5 +1,7 @@
 import React from 'react';
 import { useMyContext } from './GrantalyticsContext';
+import ChipSet, { ChipSetProps } from './ChipSet';
+import { ChipProps } from './Chip';
 
 interface CardProps {
   image: string;
@@ -14,9 +16,10 @@ interface CardProps {
   imageOutline?: boolean;
   buttonLabel2?: string;
   link2?: string;
+  chips: ChipProps[];
 }
 
-const Card: React.FC<CardProps> = ({ image, title, subtitle, text, icons, link, buttonLabel, color = "", dark, imageOutline = false, buttonLabel2, link2 }) => {
+const Card: React.FC<CardProps> = ({ image, title, subtitle, text, icons, link, buttonLabel, color = "", dark, imageOutline = false, buttonLabel2, link2, chips }) => {
   const {addInteraction} = useMyContext();
   const openLink = () => {
     addInteraction(`visited ${title}`);
@@ -27,24 +30,25 @@ const Card: React.FC<CardProps> = ({ image, title, subtitle, text, icons, link, 
 
   return (
     <div 
-      className="overflow-hidden shadow-lg p-4 flex flex-col z-10 rounded-xl border-4 border-swiss-blue" 
+      className="overflow-hidden p-4 flex flex-col z-10 rounded-xl border-4 border-swiss-blue" 
       style={{ backgroundColor: color }}
     >
-      <div className="flex items-center justify-between mb-4">
+      <div className="flex items-center justify-between ">
         <div>
-          <h2 className={`lg:text-lg font-bold ${dark ? 'text-faded-back' : 'text-faded-black'}`}>{title}</h2>
+          <h2 className={`lg:text-lg text-lg font-bold ${dark ? 'text-faded-back' : 'text-faded-black'}`}>{title}</h2>
           <h3 className={`lg:text-md text-xs italic ${dark ? 'text-faded-back' : 'text-faded-black'}`}>{subtitle}</h3>
+          
         </div>
         
         <img 
-          className={`lg:w-16 lg:h-16 w-12 h-12 object-cover rounded-md ${imageOutline ? 'border-2 border-white' : ''}`} 
+          className={` w-12 h-12 object-cover rounded-md ${imageOutline ? 'border-2 border-faded-black' : ''}`} 
           src={image} 
           alt={title} 
         />
       </div>
+      <ChipSet items={chips} />
 
-
-      <p className={`flex-grow text-sm ${dark ? 'text-faded-back' : 'text-faded-black'}`}>{text}</p>
+      <p className={`flex-grow mt-4 text-sm ${dark ? 'text-faded-back' : 'text-faded-black'}`}>{text}</p>
 
       {(!buttonLabel2 || !link2) && (      <button
         onClick={openLink}

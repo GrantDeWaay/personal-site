@@ -4,7 +4,7 @@ import {useMyContext } from './GrantalyticsContext';
 const CenteredVideo: React.FC = () => {
   const {videoTimeUpdate} = useMyContext();
     return (
-      <div className=" m-4  flex-1 z-[1000] ">
+      <div className=" m-4  flex-1 z-[1000]">
         <video
           className="rounded-lg"
           controls

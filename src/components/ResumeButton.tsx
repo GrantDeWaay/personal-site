@@ -8,7 +8,7 @@ const ResumeButton: React.FC = () => {
         window.open("https://grantdewaay.com/resume.pdf", "_blank");
       };
     return (
-        <button onClick={openLink} className='border-[2px] border-faded-back text-s text-faded-back font-sans font-bold inline-block px-2 hover:bg-faded-back hover:text-faded-black rounded-full'>Resume</button>
+        <button onClick={openLink} className='border-[2px] border-faded-back text-s text-faded-back font-sans font-bold inline-block px-2 hover:bg-faded-back hover:text-faded-black rounded-lg transition-all'>Resume</button>
 
     );
 };

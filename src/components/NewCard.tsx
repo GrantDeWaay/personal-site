@@ -52,7 +52,7 @@ const Card: React.FC<CardProps> = ({ image, title, subtitle, text, icons, link, 
 
       {(!buttonLabel2 || !link2) && (      <button
         onClick={openLink}
-        className={`mt-8 ${dark ? 'bg-faded-back text-faded-black' : 'bg-faded-black text-faded-back'} font-semibold py-2 px-4 rounded`}
+        className={`mt-8 ${dark ? 'bg-faded-back text-faded-black' : 'bg-faded-black text-faded-back hover:bg-faded-back hover:text-faded-black ring-inset ring-2 '} font-semibold py-2 px-4 rounded-lg transition-all ring-faded-black`}
       >
         {buttonLabel}
       </button>)}
@@ -63,7 +63,7 @@ const Card: React.FC<CardProps> = ({ image, title, subtitle, text, icons, link, 
         <div className='flex flex-row gap-x-2'>
               <button
         onClick={openLink}
-        className={`mt-4 flex-1 ${dark ? 'bg-faded-back text-faded-black' : 'bg-faded-black text-faded-back'} font-semibold py-2 px-4 rounded`}
+        className={`mt-4 flex-1 ${dark ? 'bg-faded-back text-faded-black' : 'bg-faded-black text-faded-back hover:bg-faded-back hover:text-faded-black ring-inset ring-2 '} font-semibold py-2 px-4 rounded-lg transition-all ring-faded-black`}
       >
         {buttonLabel}
       </button>
@@ -73,7 +73,7 @@ const Card: React.FC<CardProps> = ({ image, title, subtitle, text, icons, link, 
             addInteraction(`visited ${title} ${buttonLabel2}`);
             window.open(link2, "_blank");
           }}
-          className={`mt-4 flex-1 ${dark ? 'bg-faded-back text-faded-black' : 'bg-faded-black text-faded-back'} font-semibold py-2 px-4 rounded`}
+          className={`mt-4 flex-1 ${dark ? 'bg-faded-back text-faded-black' : 'bg-faded-black text-faded-back hover:bg-faded-back hover:text-faded-black ring-inset ring-2 '} font-semibold py-2 px-4 rounded-lg transition-all ring-faded-black`}
         >
           {buttonLabel2}
         </button>

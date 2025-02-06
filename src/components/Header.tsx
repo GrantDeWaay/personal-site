@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from './Navbar';
 import CenteredVideo from './CenteredVideo';
 import GitHubIcon from './GitHubIcon';
 import LinkedInIcon from './LinkedInIcon';

@@ -9,7 +9,8 @@ const CenteredVideo: React.FC = () => {
           className="rounded-lg"
           controls
           controlsList='nodownload noremoteplayback'
-          onTimeUpdate={() => videoTimeUpdate((document.querySelector('video') as HTMLVideoElement).currentTime)}
+
+          onPlay={() => videoTimeUpdate}
         >
           <source src="./video.mp4" type="video/mp4" />
           Your browser does not support the video tag.

@@ -7,14 +7,15 @@ const About: React.FC = () => (
             <h1 className="text-4xl font-bold mb-4   decoration-swiss-red inline-grid">Hi, I'm Grant!</h1>
             <p className=" mb-4">
                 I am a recent graduate of <span className="font-semibold underline decoration-2 underline-offset-2 decoration-swiss-red">Iowa State University</span>, 
-                where I earned degrees in both <span className="font-semibold underline decoration-2  underline-offset-2 decoration-swiss-red">Software Engineering and Interdisciplinary Design</span>. I am currently searching for a full time position. My career interests focus on <span className="font-semibold underline decoration-2 underline-offset-2 decoration-swiss-red">Large Scale Enterprise Systems</span>, <span className="font-semibold underline decoration-2 underline-offset-2 decoration-swiss-red">Distributed Computing</span>, and <span className="font-semibold underline decoration-2 underline-offset-2 decoration-swiss-red">AI Engineering</span>, inspired their ability to impact society and transform
+                where I earned degrees in both <span className="font-semibold underline decoration-2  underline-offset-2 decoration-swiss-red">Software Engineering and Interdisciplinary Design</span>. I am currently searching for a full time position. My career interests focus on Large Scale Enterprise Systems, Robotics, and AI Engineering, inspired their ability to impact society and transform
                 practically every industry.            </p>
+                <p className=" mb-4">
+                My work experience includes two internships at <span className="font-semibold underline decoration-2 underline-offset-2 decoration-swiss-red">Buildertrend</span>, one of the largest construction project management software developers. There, I grasped advanced Object-Oriented Programming fundamentals in <span className="font-semibold underline decoration-2 underline-offset-2 decoration-swiss-red"> C# and .NET Core</span> Core while building a semantic search prototype for the company's massive product catalog.
+            </p>
             <p className=" mb-4">
             I am also passionate about sustainable engineering and the role technology plays in creating a more sustainable future, having taken multiple additional courses dedicated to the subject and building a SCM platform prototype called CircularTrack dedicated to the circular economy.
             </p>
-            <p className=" mb-4">
-                My work experience includes two internships at <span className="font-semibold underline decoration-2 underline-offset-2 decoration-swiss-red">Buildertrend</span>, one of the largest construction project management software developers. There, I grasped advanced Object-Oriented Programming fundamentals in C# and .NET Core while building a semantic search prototype for the company's massive product catalog.
-            </p>
+
             <p className=" mb-4">
                 Aside from coding, some personal interests include playing pickleball, collecting retro Sega Dreamcast games, and studying modern and contemporary art.
             </p>

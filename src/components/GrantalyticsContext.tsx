@@ -21,41 +21,50 @@ interface GrantalyticsProviderProps {
 
 export const GrantalyticsProvider: React.FC<GrantalyticsProviderProps> = ({ children }) => {
   const curTime = useRef<number>(new Date().getTime()/1000);
+  const uniqueId = useRef<string>(undefined);
   const interactionRef = useRef<string[]>([]); // New ref for the string
-  const videoTracking = useRef<VideoTracking>({played: false, videoMaxTime: 0});
+  const videoTracking = useRef<VideoTracking>({played: false, videoMaxTime: 0.0});
   const addInteraction = (interactionName: string) => {
     interactionRef.current.push(interactionName);
+    sendRequest();
   }
 
-  const videoTimeUpdate = (time: number) => {
-    videoTracking.current.played = true;
-    if(time > videoTracking.current.videoMaxTime){
-        videoTracking.current.videoMaxTime = time;
+  const videoTimeUpdate = () => {
+    if(videoTracking.current.played === false){
+      videoTracking.current.played = true;
+      sendRequest();
     }
   }
 
     useEffect(() => {
-        window.addEventListener('beforeunload', handleBeforeUnload);
-        return () => {
-        window.removeEventListener('beforeunload', handleBeforeUnload);
-        };
+      const requestOptions = {
+        method: 'GET',
+    };
+    fetch('http://localhost:8080/api/generate', requestOptions)
+      .then(response => response.json())
+      .then(data => {uniqueId.current = data.id})
+      .then(() => sendRequest())
+      .catch(error => console.error('Error:', error))
+      
     }, []);
-  const handleBeforeUnload = (event: BeforeUnloadEvent) => {
+  const sendRequest = () => {
+    if(uniqueId.current !== undefined){
+
     // Custom message (may not show in modern browsers)
     const requestOptions = {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
+            "id": uniqueId.current,
             "pathVariable": window.location.pathname,
             "visitDuration": Number((new Date().getTime()/1000 - curTime.current).toFixed(2)),
             "interactions": interactionRef.current,
-            "videoTracking": videoTracking.current
+            "videoPlayed": videoTracking.current.played
         })
     };
     fetch('http://localhost:8080/api/log-visit', requestOptions)
-        .then(response => response.json())
-    //event.preventDefault();
-    console.log('Page is unloading. Performing cleanup or actions...');
+    .catch(error => console.error('Error:', error))
+  }
   };
 
   

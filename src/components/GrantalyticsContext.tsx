@@ -40,7 +40,7 @@ export const GrantalyticsProvider: React.FC<GrantalyticsProviderProps> = ({ chil
       const requestOptions = {
         method: 'GET',
     };
-    fetch('http://localhost:8080/api/generate', requestOptions)
+    fetch('https://grantalytics-server-770601767747.us-central1.run.app/api/generate', requestOptions)
       .then(response => response.json())
       .then(data => {uniqueId.current = data.id})
       .then(() => sendRequest())
@@ -62,7 +62,7 @@ export const GrantalyticsProvider: React.FC<GrantalyticsProviderProps> = ({ chil
             "videoPlayed": videoTracking.current.played
         })
     };
-    fetch('http://localhost:8080/api/log-visit', requestOptions)
+    fetch('https://grantalytics-server-770601767747.us-central1.run.app/api/log-visit', requestOptions)
     .catch(error => console.error('Error:', error))
   }
   };

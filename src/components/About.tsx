@@ -13,7 +13,7 @@ const About: React.FC = () => (
                 My work experience includes two internships at <span className="font-semibold underline decoration-2 underline-offset-2 decoration-swiss-red">Buildertrend</span>, one of the largest construction project management software developers. There, I grasped advanced Object-Oriented Programming fundamentals in <span className="font-semibold underline decoration-2 underline-offset-2 decoration-swiss-red"> C# and .NET Core</span> Core while building a semantic search prototype for the company's massive product catalog.
             </p>
             <p className=" mb-4">
-            I am also passionate about sustainable engineering and the role technology plays in creating a more sustainable future, having taken multiple additional courses dedicated to the subject and building a SCM platform prototype called CircularTrack dedicated to the circular economy.
+            I am also passionate about sustainable engineering and the role technology plays in creating a more sustainable future, having taken multiple additional courses dedicated to the subject and building a SCM platform prototype called CircularTrack dedicated to the circular economy, winning $5,000 in a university pitch competition.
             </p>
 
             <p className=" mb-4">

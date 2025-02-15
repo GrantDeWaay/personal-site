@@ -10,7 +10,7 @@ const CenteredVideo: React.FC = () => {
           controls
           controlsList='nodownload noremoteplayback'
 
-          onPlay={() => videoTimeUpdate}
+          onPlay={videoTimeUpdate}
         >
           <source src="./video.mp4" type="video/mp4" />
           Your browser does not support the video tag.

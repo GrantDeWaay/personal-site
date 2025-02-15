@@ -3,7 +3,7 @@ import React, { createContext, useContext, useState, ReactNode, useEffect, useRe
 // Define the shape of the context data
 interface MyContextType {
     addInteraction: (interactionName: string) => void;
-    videoTimeUpdate: (time: number) => void;
+    videoTimeUpdate: () => void;
 }
 
 interface VideoTracking{
@@ -23,15 +23,15 @@ export const GrantalyticsProvider: React.FC<GrantalyticsProviderProps> = ({ chil
   const curTime = useRef<number>(new Date().getTime()/1000);
   const uniqueId = useRef<string>(undefined);
   const interactionRef = useRef<string[]>([]); // New ref for the string
-  const videoTracking = useRef<VideoTracking>({played: false, videoMaxTime: 0.0});
+  const videoTracking = useRef<boolean>(false);
   const addInteraction = (interactionName: string) => {
     interactionRef.current.push(interactionName);
     sendRequest();
   }
 
   const videoTimeUpdate = () => {
-    if(videoTracking.current.played === false){
-      videoTracking.current.played = true;
+    if(videoTracking.current == false){
+      videoTracking.current = true;
       sendRequest();
     }
   }
@@ -59,7 +59,7 @@ export const GrantalyticsProvider: React.FC<GrantalyticsProviderProps> = ({ chil
             "pathVariable": window.location.pathname,
             "visitDuration": Number((new Date().getTime()/1000 - curTime.current).toFixed(2)),
             "interactions": interactionRef.current,
-            "videoPlayed": videoTracking.current.played
+            "videoPlayed": videoTracking.current
         })
     };
     fetch('https://grantalytics-server-770601767747.us-central1.run.app/api/log-visit', requestOptions)

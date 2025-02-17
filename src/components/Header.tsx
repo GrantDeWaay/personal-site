@@ -3,11 +3,13 @@ import CenteredVideo from './CenteredVideo';
 import GitHubIcon from './GitHubIcon';
 import LinkedInIcon from './LinkedInIcon';
 import ResumeButton from './ResumeButton';
+import { LayoutContainer3 } from './LayoutContainer';
 
 const Header: React.FC = () => (
   <div>
-    <div className="flex md:flex-row flex-col items-center justify-center md:px-[10%] px-[5%] gap-4 md:gap-0 ">
-    <div className='text-center flex-1 md:text-left'>
+    <LayoutContainer3>
+    <div className='col-span-12 lg:col-span-6 text-center flex-1 md:text-left '>
+      <div className='flex flex-col justify-center h-full'>
       <h1 className="lg:text-7xl text-5xl leading-tight font-bold text-faded-back">
         Grant DeWaay
       </h1>
@@ -20,14 +22,15 @@ const Header: React.FC = () => (
       <GitHubIcon/>
       <LinkedInIcon/>
       </div>
+      </div>
+
       
       </div>
-      <div>
-        
-      </div>
+      <div className='col-span-12 lg:col-span-6'>
       <CenteredVideo/>
+      </div>
       
-    </div>
+    </LayoutContainer3>
   </div>
 );
 

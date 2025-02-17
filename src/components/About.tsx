@@ -24,7 +24,7 @@ const About: React.FC = () => (
 
     <div className="lg:col-span-6 col-span-12  md:my-16 mb-16 flex items-center justify-center z-[10000] ">
         <div>
-            <img src="Photo1.jpg" className="max-w-full max-h-full rounded-lg border-4  border-swiss-red  " alt="Image" />
+            <img src="Photo1.jpg" className="max-w-full max-h-full rounded-lg outline outline-4 outline-swiss-red  " alt="Image" />
         </div>
     </div>
     </>

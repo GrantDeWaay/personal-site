@@ -125,9 +125,6 @@ const App: React.FC = () => {
 
 
       </LayoutContainer3>
-      <LayoutContainer2>
-        
-      </LayoutContainer2>
       <Footer />
       <GrainyOverlay />
     </div>

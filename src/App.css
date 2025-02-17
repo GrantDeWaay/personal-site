@@ -1,14 +1,12 @@
-/* index.css */
 .grainy-overlay {
-    background-image: url('../public/noise.jpg'); /* or '/noise.jpg' if in the public folder */
-    background-repeat: repeat;
-    background-size: 300px 300px; /* Smaller size for finer grain */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 100;
-    opacity: 0.1;
-    pointer-events: none;
-  }
+  background-image: url('../public/noise.jpg');
+  background-repeat: repeat;
+  background-size: 300px 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: 100;
+}

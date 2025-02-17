@@ -1,8 +1,29 @@
-import React from 'react';
-import '../App.css'
+import React, { useEffect, useState } from 'react';
+import '../App.css';
+
 const GrainyOverlay: React.FC = () => {
+  const [pageHeight, setPageHeight] = useState(document.documentElement.scrollHeight);
+
+  useEffect(() => {
+    const updateHeight = () => {
+      setPageHeight(document.documentElement.scrollHeight);
+    };
+
+    window.addEventListener('resize', updateHeight);
+    window.addEventListener('scroll', updateHeight);
+    updateHeight();
+
+    return () => {
+      window.removeEventListener('resize', updateHeight);
+      window.removeEventListener('scroll', updateHeight);
+    };
+  }, []);
+
   return (
-    <div className="grainy-overlay"></div>
+    <div 
+      className="grainy-overlay"
+      style={{ height: `${pageHeight}px` }}
+    ></div>
   );
 };
 

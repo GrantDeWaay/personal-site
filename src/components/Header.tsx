@@ -26,7 +26,7 @@ const Header: React.FC = () => (
 
       
       </div>
-      <div className='col-span-12 lg:col-span-6'>
+      <div className='col-span-12 lg:col-span-6 z-[100000]'>
       <CenteredVideo/>
       </div>
       

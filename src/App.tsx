@@ -19,7 +19,7 @@ const App: React.FC = () => {
       <LayoutContainer3>
         <div className='col-span-12 z-10 text-center text-faded-back font-sans text-5xl font-bold underline underline-offset-2 decoration-4 decoration-swiss-blue'>Projects</div>
         
-        <div className='lg:col-span-4 col-span-12 z-10 flex md:mx-0'>
+        <div className='lg:col-span-4 md:col-span-6 col-span-12 z-10 flex md:mx-0'>
           <NewCard
             image={'./Checkers.png'}
             title={'Optimal Play AI Checkers Bot'}
@@ -31,6 +31,21 @@ const App: React.FC = () => {
             imageOutline
             chips={[
               { text: 'Java' , type:1},
+            ]}
+          />
+        </div>
+
+        <div className='lg:col-span-4 md:col-span-6 col-span-12 z-10 flex'>
+          <NewCard
+            image={'./FSharp.png'}
+            title={'LeetCode Solutions Written in F#'}
+            subtitle={'.NET Functional Programming Practice'}
+            text={'To learn more about the .NET ecosystem, I am learning functional programming and F# by solving LeetCode problems exclusively with the programming language.'}
+            link={'https://github.com/GrantDeWaay/LeetCodeFSharpSolutions'}
+            color='#292928'
+            buttonLabel={'GitHub'}
+            chips={[
+              { text: 'F#', type: 1},
             ]}
           />
         </div>
@@ -59,7 +74,7 @@ const App: React.FC = () => {
           <NewCard
             image={'./HackHarvard.png'}
             title={'Harvard Burger'}
-            subtitle={'Hack Harvard 2024 Award Winner'}
+            subtitle={'HackHarvard 2024 Award Winner'}
             text={'Harvard Burger is a digital drive-thru kiosk with a twist. It interprets the user\'s spoken order with smart semantic processing, converting their requests into a complete order from a preset menu. Winner of the Funniest Hack Award at HackHarvard 2024.'}
             link={'https://github.com/GrantDeWaay/HackHarvard2024'}
             buttonLabel={'GitHub'}
@@ -107,6 +122,8 @@ const App: React.FC = () => {
             ]}
           />
         </div>
+
+
       </LayoutContainer3>
       <LayoutContainer2>
         

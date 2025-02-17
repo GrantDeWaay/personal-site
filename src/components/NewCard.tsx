@@ -36,7 +36,7 @@ const Card: React.FC<CardProps> = ({ image, title, subtitle, text, icons, link, 
       <div className="flex items-center justify-between ">
         <div>
           <h2 className={`lg:text-lg text-lg font-bold ${dark ? 'text-faded-back' : 'text-faded-black'}`}>{title}</h2>
-          <h3 className={`lg:text-md text-xs italic ${dark ? 'text-faded-back' : 'text-faded-black'}`}>{subtitle}</h3>
+          <h3 className={`lg:text-md text-s ${dark ? 'text-faded-back' : 'text-faded-black'}`}>{subtitle}</h3>
           
         </div>
         

@@ -34,21 +34,26 @@ const App: React.FC = () => {
             ]}
           />
         </div>
-
+        
         <div className='lg:col-span-4 md:col-span-6 col-span-12 z-10 flex'>
           <NewCard
-            image={'./FSharp.png'}
-            title={'LeetCode Solutions Written in F#'}
-            subtitle={'.NET Functional Programming Practice'}
-            text={'To learn more about the .NET ecosystem, I am learning functional programming and F# by solving LeetCode problems exclusively with the programming language.'}
-            link={'https://github.com/GrantDeWaay/LeetCodeFSharpSolutions'}
+            image={'./robot.png'}
+            title={'Battlefield Scanning Robot'}
+            subtitle={'Hazard Detection Embedded C Robot '}
+            text={'This robot that utilizes three different memory mapped sensors to scan a battlefield for holes and obstacles. Communicates it\'s findings to a desktop command center via serial connection to display an interactive map built with Python.'}
+            link={'https://github.com/GrantDeWaay/BattlefieldScanBot'}
             color='#292928'
             buttonLabel={'GitHub'}
             chips={[
-              { text: 'F#', type: 1},
+              { text: 'Embedded C', type: 1},
+              { text: 'Python', type: 1 },
             ]}
           />
         </div>
+
+
+
+        
 
         <div className='lg:col-span-4 md:col-span-6 col-span-12 z-10 flex'>
           <NewCard
@@ -66,6 +71,21 @@ const App: React.FC = () => {
               { text: 'Spring Boot',  type: 1 },
               { text: 'TypeScript',  type: 1},
               { text: 'React', type: 1},
+            ]}
+          />
+        </div>
+
+        <div className='lg:col-span-4 md:col-span-6 col-span-12 z-10 flex'>
+          <NewCard
+            image={'./FSharp.png'}
+            title={'LeetCode Solutions Written in F#'}
+            subtitle={'.NET Functional Programming Practice'}
+            text={'To learn more about the .NET ecosystem, I am learning functional programming and F# by solving LeetCode problems exclusively with the programming language.'}
+            link={'https://github.com/GrantDeWaay/LeetCodeFSharpSolutions'}
+            color='#292928'
+            buttonLabel={'GitHub'}
+            chips={[
+              { text: 'F#', type: 1},
             ]}
           />
         </div>
@@ -106,22 +126,6 @@ const App: React.FC = () => {
           />
         </div>
 
-        <div className='lg:col-span-4 md:col-span-6 col-span-12 z-10 flex'>
-          <NewCard
-            image={'./website.png'}
-            title={'This Personal Site'}
-            subtitle={'A Portfolio to Showcase Myself'}
-            text={'I drew inspiration from a range of designers to bring this portfolio website to life. For the layout, I referenced Grid Systems in Graphic Design by Josef Müller-Brockmann. I also applied elements of Dieter Rams\' 10 Principles of Good Design, reminding myself to keep it simple.'}
-            link={'https://github.com/GrantDeWaay/personal-site'}
-            color='#292928'
-            buttonLabel={'GitHub'}
-            chips={[
-              { text: 'TypeScript', type: 1},
-              { text: 'React', type: 1 },
-              { text: 'Tailwind CSS', type: 1 },
-            ]}
-          />
-        </div>
 
 
       </LayoutContainer3>
